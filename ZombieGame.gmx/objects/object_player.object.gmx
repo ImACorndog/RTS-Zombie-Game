@@ -115,6 +115,14 @@ if(keyboard_check(ord("S"))) { speed = -walkingSpeed; }
 //Setting the image
 if(speed &gt; 0 || speed &lt; 0) { image_speed = setSpeed; }
 else { image_speed = 0; image_index = 0; }
+
+
+if global.hitpoints &lt;= 0 {  show_message("You're Dead!") room_restart() }
+
+
+ 
+
+
 </string>
           </argument>
         </arguments>
@@ -211,5 +219,8 @@ else { image_speed = 0; image_index = 0; }
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>25,37</point>
+    <point>32,32</point>
+  </PhysicsShapePoints>
 </object>
